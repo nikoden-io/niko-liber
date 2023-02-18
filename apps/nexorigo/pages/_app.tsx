@@ -6,7 +6,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>We are the next Generation !</title>
+        <title>We are the next Generation again !</title>
       </Head>
       <main className="app">
         <Component {...pageProps} />
