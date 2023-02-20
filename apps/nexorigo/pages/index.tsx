@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { Banner } from '../components/banner';
+import { FOURSQUARE_API_KEY } from '../.env/.secrets';
 
 const MainTitle = styled.div`
   font-family: inherit;
@@ -26,6 +27,21 @@ const HomePage: React.FC = () => {
     console.log('click');
   };
 
+  const handler = async () => {
+    const result = await fetch(
+      'https://api.foursquare.com/v3/places/search?query=nivelles&ll=50.53%2C4.19&radius=100000&categories=17000',
+      {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: FOURSQUARE_API_KEY,
+        },
+      }
+    );
+    const data = await result.json();
+    console.log(data);
+  };
+
   return (
     <>
       <MainTitle>
@@ -33,7 +49,12 @@ const HomePage: React.FC = () => {
           <h1>Pokedex</h1>
         </div>
       </MainTitle>
-      <Banner label="Browse PokeNext" {...{ onClickHandler }} />
+      <div>
+        <Banner label="Browse PokeNext" {...{ onClickHandler }} />
+      </div>
+      <div>
+        <button onClick={handler}>Click</button>
+      </div>
     </>
   );
 };
