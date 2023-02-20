@@ -23,6 +23,7 @@ export const theme = {
     sm: '576px',
     md: '768px',
     lg: '992px',
-    xl: '1200px',
+    xl: '1280x',
+    '2xl': '1536px',
   },
 };
