@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { Banner } from '../components/banner';
-import { FOURSQUARE_API_KEY } from '../.env/.secrets';
+import { FOURSQUARE_API_TEST } from '../.env/.secrets';
 
 const MainTitle = styled.div`
   font-family: inherit;
@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: FOURSQUARE_API_KEY,
+          Authorization: FOURSQUARE_API_TEST,
         },
       }
     );
