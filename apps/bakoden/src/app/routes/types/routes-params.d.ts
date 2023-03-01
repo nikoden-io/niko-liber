@@ -1,0 +1,3 @@
+interface PokemonParams {
+  pokemonNameOrId: string;
+}
