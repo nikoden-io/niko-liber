@@ -106,10 +106,11 @@ Contain all the libraries of the monorepo.
 **Nicolas Denoël**
 
 - <a href="https://linkedin.com/in/nicolas-denoel">
-  <img align="center" src="https://github.com/devicons/devicon/blob/master/icons/linkedin/linkedin-original.svg" alt="linkedin.com/in/nicolas-denoel" width="40" height="40" />
+  <img align="center" src="https://github.com/devicons/devicon/blob/master/icons/linkedin/linkedin-original.svg" alt="linkedin.com/in/nicolas-denoel" width="30" height="30" />
   </a>  
-- [GitHub](https://github.com/nikoden-io "Nicolas Denoël")
-
-- [Email](mailto:rohitjain19060@gmail.com?subject=Hi%20from%20<repo-email> "Hi!")
+- <a href="https://github.com/nikoden-io">
+  <img align="center" src="https://github.com/devicons/devicon/blob/master/icons/github/github-original-wordmark.svg" alt="GitHub" width="30" height="30" />
+  </a>
+- [📧](mailto:contact@nikoden.io?subject=Hi%20from%20NikoLiber "Hi!")
 
 <p style="text-align: center">Made with <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-plain.svg" alt="TypeScript" width="15" height="15"/>  & ❤️ in Belgium</p>
