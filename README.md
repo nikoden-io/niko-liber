@@ -112,4 +112,4 @@ Contain all the libraries of the monorepo.
 
 - [Email](mailto:rohitjain19060@gmail.com?subject=Hi%20from%20<repo-email> "Hi!")
 
-<p style="text-align: center">Made with <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-plain.svg" alt="TypeScript" width="50" height="50"/>  & ❤️ in Belgium</p>
+<p style="text-align: center">Made with <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-plain.svg" alt="TypeScript" width="15" height="15"/>  & ❤️ in Belgium</p>
