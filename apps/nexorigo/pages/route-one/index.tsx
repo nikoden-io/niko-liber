@@ -2,9 +2,7 @@ import React, { FC } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-interface IProps {}
-
-const index: FC<IProps> = (props) => {
+const index: FC = () => {
   return (
     <div>
       <p>ROUTE ONE INDEX</p>

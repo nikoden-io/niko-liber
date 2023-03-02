@@ -1,7 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import axios from 'axios';
+
 import { Banner } from '../components/banner';
-import { FOURSQUARE_API_TEST } from '../.env/.secrets';
 
 const MainTitle = styled.div`
   font-family: inherit;
@@ -22,24 +23,34 @@ const MainTitle = styled.div`
   }
 `;
 
+const Pokemon = styled.div`
+  h2 {
+    font-size: 4rem;
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+`;
+
 const HomePage: React.FC = () => {
+  // States
+  const [dumData, setDumData] = React.useState(null);
+
+  // Handlers
   const onClickHandler = () => {
     console.log('click');
   };
 
   const handler = async () => {
-    const result = await fetch(
-      'https://api.foursquare.com/v3/places/search?query=nivelles&ll=50.53%2C4.19&radius=100000&categories=17000',
-      {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: FOURSQUARE_API_TEST,
-        },
-      }
-    );
-    const data = await result.json();
-    console.log(data);
+    try {
+      const { data } = await axios.get('https://bakoden.nikoden.io/pokemon/5');
+      setDumData(data);
+      console.log(data);
+    } catch (e) {
+      console.log(`/pokemons error: ${e}`);
+    }
   };
 
   return (
@@ -53,6 +64,14 @@ const HomePage: React.FC = () => {
         <Banner label="Browse PokeNext" {...{ onClickHandler }} />
       </div>
       <div>
+        {dumData && (
+          <Pokemon>
+            <h2>{dumData.pokemon.name}</h2>
+            {dumData.pokemon.abilities.map((ability) => (
+              <p key={ability.ability.name}>{ability.ability.name}</p>
+            ))}
+          </Pokemon>
+        )}
         <button onClick={handler}>Click</button>
       </div>
     </>
