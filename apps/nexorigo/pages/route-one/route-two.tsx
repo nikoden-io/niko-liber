@@ -1,8 +1,6 @@
 import React, { FC } from 'react';
 
-interface IProps {}
-
-const routeTwo: FC<IProps> = (props) => {
+const routeTwo: FC = (props) => {
   return (
     <div>
       <p>ROUTE TWO PAGE</p>
