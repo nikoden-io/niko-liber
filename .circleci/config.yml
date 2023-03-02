@@ -14,6 +14,8 @@ jobs:
       - run: npx nx affected --base=$NX_BASE --head=$NX_HEAD --target=lint --parallel=3
       - run: npx nx affected --base=$NX_BASE --head=$NX_HEAD --target=test --parallel=3 --configuration=ci
       - run: npx nx affected --base=$NX_BASE --head=$NX_HEAD --target=build --parallel=3
+      - store_test_results:
+          path: test-results
 workflows:
   build:
     jobs:
