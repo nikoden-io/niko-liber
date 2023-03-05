@@ -45,8 +45,16 @@ As it's a demo project, it's currently evolving as a side-project and will be up
 
 ### And then ... ?
 
-From this point you have access to the full monorepo. You can use either NX commands to run builds, e2e, tests and off
-course serve every projects included. (see commands below or in NX documentation)
+From this point you have access to the full monorepo.  
+You can use either NX commands to run builds, e2e, tests and off
+course serve every projects included.  
+(see commands below or in NX documentation)
+
+## 💻 Commands
+
+* [Nx **run** commands](https://nx.dev/packages/nx/documents/run)
+* [Nx **run-many** commands](https://nx.dev/packages/nx/documents/run-many)
+* [Nx **all** commands](https://nx.dev/reference/commands)
 
 #### Example: test all projects
 
@@ -54,22 +62,16 @@ course serve every projects included. (see commands below or in NX documentation
   nx run-many --target=test
   ```
 
-## ❗ Available Commands
-
-* [Nx **run** commands](https://nx.dev/packages/nx/documents/run)
-* [Nx **run-many** commands](https://nx.dev/packages/nx/documents/run-many)
-* [Nx **all** commands](https://nx.dev/reference/commands)
-
 ## 👷 Built with
 
-* [Nx](https://nx.dev/)
-* [NextJS](https://nextjs.org/)
-* [React](https://reactjs.org/)
-* [Fastify](https://www.fastify.io/)
-* [TypeScript](https://www.typescriptlang.org/)
-* [NodeJS](https://nodejs.org/en/)
-* [Jest](https://jestjs.io/)
 * [Cypress](https://www.cypress.io/)
+* [Fastify](https://www.fastify.io/)
+* [Jest](https://jestjs.io/)
+* [NextJS](https://nextjs.org/)
+* [NodeJS](https://nodejs.org/en/)
+* [Nx](https://nx.dev/)
+* [React](https://reactjs.org/)
+* [TypeScript](https://www.typescriptlang.org/)
 
 ## 📂 Directory Structure
 
@@ -103,14 +105,19 @@ Contain all the libraries of the monorepo.
 
 ## Author
 
-**Nicolas Denoël**
-
-- <a href="https://linkedin.com/in/nicolas-denoel">
+**Nicolas Denoël** Software Developer
+<p>
+<a href="https://linkedin.com/in/nicolas-denoel">
   <img align="center" src="https://github.com/devicons/devicon/blob/master/icons/linkedin/linkedin-original.svg" alt="linkedin.com/in/nicolas-denoel" width="30" height="30" />
-  </a>  
-- <a href="https://github.com/nikoden-io">
+  </a>
+</p>
+<p>
+ <a href="https://github.com/nikoden-io">
   <img align="center" src="https://github.com/devicons/devicon/blob/master/icons/github/github-original-wordmark.svg" alt="GitHub" width="30" height="30" />
   </a>
-- [📧](mailto:contact@nikoden.io?subject=Hi%20from%20NikoLiber "Hi!")
+</p>
+<p>
+ [📧](mailto:contact@nikoden.io?subject=Hi%20from%20NikoLiber "Hi!")
+</p>
 
 <p style="text-align: center">Made with <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-plain.svg" alt="TypeScript" width="15" height="15"/>  & ❤️ in Belgium</p>
